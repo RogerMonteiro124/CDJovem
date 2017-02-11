@@ -1,54 +1,171 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="roger.monteiro.cdjoven.MainActivity">
+    android:paddingTop="@dimen/activity_vertical_margin">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="CD Jovem 2017"
         android:id="@+id/textView" />
 
-    <Button
-        android:text="Button"
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView"
-        android:layout_toRightOf="@+id/textView"
-        android:layout_toEndOf="@+id/textView"
-        android:layout_marginLeft="31dp"
-        android:layout_marginStart="31dp"
-        android:layout_marginTop="111dp"
-        android:id="@+id/Button2" />
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageButton
+            android:text="EU CREIO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/eucreio"
+            app:srcCompat="@mipmap/img"
+            android:layout_below="@+id/orando"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="17dp" />
+
+        <ImageButton
+            android:text="CONSAGRAÇÃO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/consagracao"
+            app:srcCompat="@mipmap/img"
+            android:layout_alignTop="@+id/eucreio"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageButton
+            android:text="ULTIMO CONVITE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ultimoconvite"
+            app:srcCompat="@mipmap/img"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageButton
+            android:text="MINHA FORTALEZA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/minhafortaleza"
+            app:srcCompat="@mipmap/img"
+            android:layout_below="@+id/ultimoconvite"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageButton
+            android:text="ORANDO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/orando"
+            app:srcCompat="@mipmap/img"
+            android:layout_below="@+id/docepaz"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageButton
+            android:text="DOCE PAZ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/docepaz"
+            app:srcCompat="@mipmap/img"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageButton
+            android:text="OUÇO SUA VOZ"
+            android:id="@+id/oucosuavoz"
+            app:srcCompat="@mipmap/img"
+            android:layout_width="50dp"
+            android:layout_alignTop="@+id/orando"
+            android:layout_centerHorizontal="true"
+            android:layout_height="100dp" />
+
+        <TextView
+            android:text="DOCE PAZ"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/docepaz"
+            android:layout_alignEnd="@+id/docepaz"
+            android:layout_marginRight="28dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginTop="31dp" />
+
+        <TextView
+            android:text="ORANDO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="34dp"
+            android:layout_below="@+id/docepaz"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_alignStart="@+id/textView2" />
+
+        <TextView
+            android:text="OUÇOSUA VOZ"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/oucosuavoz"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dp"
+            android:id="@+id/textView4" />
+
+        <TextView
+            android:text="ULTIMO CONVITE"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_toRightOf="@+id/textView4"
+            android:layout_toEndOf="@+id/textView4"
+            android:layout_marginLeft="19dp"
+            android:layout_marginStart="19dp"
+            android:id="@+id/textView5" />
+
+        <TextView
+            android:text="MINHA FORTALEZA"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView3"
+            android:layout_alignLeft="@+id/textView5"
+            android:layout_alignStart="@+id/textView5"
+            android:id="@+id/textView6" />
+
+        <TextView
+            android:text="CONSAGRAÇÃO"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/consagracao"
+            android:layout_alignLeft="@+id/textView6"
+            android:layout_alignStart="@+id/textView6"
+            android:layout_marginTop="40dp"
+            android:id="@+id/textView7" />
+
+    </RelativeLayout>
 
     <Button
-        android:text="Button"
+        android:text="STOP"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="41dp"
-        android:layout_marginStart="41dp"
-        android:layout_marginTop="98dp"
-        android:id="@+id/Button"
-        android:layout_below="@+id/Button2"
-        android:layout_alignLeft="@+id/Button2"
-        android:layout_alignStart="@+id/Button2" />
-
-    <Button
-        android:text="Stop"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="32dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginBottom="39dp"
-        android:id="@+id/stop" />
-</RelativeLayout>
+        android:layout_marginTop="17dp"
+        android:id="@+id/stop"/>
+</LinearLayout>
